@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Mathemagical Speed</title>
+        <link rel="stylesheet" href="ressources\css\styles.css">
+        <script src="https://kit.fontawesome.com/12c3b1e1c9.js" crossorigin="anonymous"></script>
+    </head>
+
+    <!-- menu -->
+    <menu>
+        <i id="home_button" class="fas fa-home"></i>
+        <div id="menu">
+            <a href="index.html"><h1>Play</h1></a>
+            <a href="scores.html"><h1>Scores</h1></a>
+            <a href="donate.html"><h1 id="cash" class="hvr-ripple-out hvr-grow">Donate</h1></a>
+        </div>
+    </menu>
+
+    <div id="timer"></div>
+
+    <main>
+
+        <!-- calculator -->
+        <div id="calc_frame" class="shadow">
+
+            <!-- screen -->
+            <div id="screen" class="margin_bottom">
+                <p id="operation"></p>
+                <h2 id="result"></h2>
+            </div>
+
+            <section id="buttons">
+                <!-- lvl2 keys -->
+            <div id="lvl_2">
+                <button id="(" class="hvr-grow">(</button>
+                <button id=")" class="hvr-grow">)</button>
+                <button id="pow" class="hvr-grow"><i class="fas fa-superscript"></i></button>
+                <button id="sqrt" class="hvr-grow"><i class="fas fa-square-root-alt"></i></button>
+                <button id="log" class="hvr-grow">log()</button>
+            </div>
+
+            <!-- lvl3 keys -->
+            <div id="lvl_3">
+                <!-- insert e image -->
+                <button id="e" class="hvr-grow">e</button>
+                <!-- insert pi image -->
+                <button id="pi" class="hvr-grow">pi</button>
+                <button id="sin" class="hvr-grow">sin</button>
+                <button id="cos" class="hvr-grow">cos</button>
+                <button id="tan" class="hvr-grow">tan</button>
+            </div>
+
+            <!-- lvl1 keys -->
+            <div id="lvl_1">
+                <!-- numbers -->
+                <section id="numbers">
+                    <button id="7" class="hvr-grow margin_bottom">7</button>
+                    <button id="8" class="hvr-grow margin_center margin_bottom">8</button>
+                    <button id="9" class="hvr-grow margin_bottom">9</button>
+                    <button id="4" class="hvr-grow margin_bottom">4</button>
+                    <button id="5" class="hvr-grow margin_center margin_bottom">5</button>
+                    <button id="6" class="hvr-grow margin_bottom">6</button>
+                    <button id="1" class="hvr-grow margin_bottom">1</button>
+                    <button id="2" class="hvr-grow margin_center margin_bottom">2</button>
+                    <button id="3" class="hvr-grow margin_bottom">3</button>
+                    <button id="0" class="hvr-grow">0</button>
+                    <button id="." class="hvr-grow margin_center">.</button>
+                    <button id="pow10" class="hvr-grow">10^x</button>
+                </section>
+
+                <!-- operators -->
+                <section id="operators">
+                    <!-- delete button -->
+                    <button id="del" class="hvr-grow large_button margin_bottom"><i class="fas fa-backspace"></i></button>
+                    
+                    <!-- operators -->
+                    <div id="operations">
+                        <button id="x" class="hvr-grow margin_right margin_bottom"><i class="fas fa-times"></i></button>
+                        <button id="/" class="hvr-grow margin_bottom"><i class="fas fa-divide"></i></button>
+                        <button id="+" class="hvr-grow margin_right margin_bottom"><i class="fas fa-plus"></i></button>
+                        <button id="-" class="hvr-grow margin_bottom"><i class="fas fa-minus"></i></button>
+                    </div>
+
+                    <!-- execute button -->
+                    <button id="exe" class="hvr-grow large_button important">EXE</button>
+                </section>
+            </div>
+            </section>
+        </div>
+
+        <!-- question -->
+        <div class="question_frame">
+            <div class="arrow-left"></div>
+            <h1 id="question">256</h1>
+        </div>
+
+        <!-- score -->
+        <div id="score">
+            <div id="holder_1">
+                <h1 class="points">0</h1>
+            </div>
+            <div id="holder_2">
+                <h1 class="points">0</h1>
+            </div>
+            <div id="holder_3">
+                <h1 class="points">0</h1>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="ressources\js\scripts.js"></script>
+</html>

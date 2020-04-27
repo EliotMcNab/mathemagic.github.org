@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+}
+
+table {
+    margin-top: 50px;
+    width: 80%;
+
+    overflow: hidden;
+
+    border-radius: 50px;
+
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+tr {
+    text-align: center;
+}
+
+th {
+    color:  rgb(95, 64, 206);;
+    background-color: aquamarine;
+
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+td {
+    border: 3px solid white;
+
+    color: white;
+
+    font-size: 20px;;
+
+    padding: 10px;
+    width: 400px;
+}
+
+button {
+    margin-top: 50px;
+
+    color: white;
+    background-color: crimson;
+}
